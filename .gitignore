@@ -1,0 +1,4 @@
+# Local IDE state and runtime logs
+/.idea/
+/logs/
+

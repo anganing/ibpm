@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>top.continew.admin</groupId>
+        <artifactId>continew-plugin</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>continew-plugin-bpm</artifactId>
+
+    <name>${project.artifactId}</name>
+    <description>审批流程插件</description>
+
+    <dependencies>
+        <!-- Spring Boot 3 与 MyBatis-Plus 工作流引擎 -->
+        <dependency>
+            <groupId>org.dromara.warm</groupId>
+            <artifactId>warm-flow-mybatis-plus-sb3-starter</artifactId>
+        </dependency>
+
+        <!-- Warm-Flow 设计器后端接口与 Vue 3 设计器资源 -->
+        <dependency>
+            <groupId>org.dromara.warm</groupId>
+            <artifactId>warm-flow-plugin-ui-sb-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.dromara.warm</groupId>
+            <artifactId>warm-flow-plugin-vue3-ui</artifactId>
+        </dependency>
+
+        <!-- 与项目现有 Jackson 兼容的 JSON SPI 实现 -->
+        <dependency>
+            <groupId>org.dromara.warm</groupId>
+            <artifactId>warm-flow-plugin-json-v1</artifactId>
+        </dependency>
+    </dependencies>
+</project>
